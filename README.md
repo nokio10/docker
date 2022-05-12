@@ -29,7 +29,7 @@ docker run -d -p 80:80 nginx
 ![image](https://user-images.githubusercontent.com/98832702/168162684-0dd35d7e-7d1d-47c5-94ff-18e8f495c4a5.png)
 
 Образ - это набор файлов, а контейнер - это процесс, запущевенный в ОС с использованием этих файлов. 
-Ядро в контейнере нельзя собрать. 
+В контейнере можно собрать ядро. https://github.com/a13xp0p0v/kernel-build-containers/blob/master/Dockerfile
 
 ### 2. Создайте кастомные образы nginx и php, объедините их в docker-compose.
 После запуска nginx должен показывать php info.
