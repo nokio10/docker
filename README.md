@@ -15,10 +15,11 @@
 Все собранные образы должны быть в docker hub
 
 ## Решение
-### 1. Создайте свой кастомный образ nginx на базе alpine. После запуска nginx должен
-отдавать кастомную страницу (достаточно изменить дефолтную страницу nginx)
+### 1. Создайте свой кастомный образ nginx на базе alpine. После запуска nginx должен отдавать кастомную страницу (достаточно изменить дефолтную страницу nginx)
+
 https://hub.docker.com/u/nokio10
 Образ nginx  nokio10/mynginx:1.20.2 собран из dockerfile в корне репозитория.
+
 ```
 docker build . -t nginx
 docker image tag nginx nokio10/mynginx:php
@@ -31,8 +32,7 @@ docker run -d -p 80:80 nginx
 Образ - это набор файлов, а контейнер - это процесс, запущевенный в ОС с использованием этих файлов. 
 В контейнере можно собрать ядро. https://github.com/a13xp0p0v/kernel-build-containers/blob/master/Dockerfile
 
-### 2. Создайте кастомные образы nginx и php, объедините их в docker-compose.
-После запуска nginx должен показывать php info.
+### 2. Создайте кастомные образы nginx и php, объедините их в docker-compose. После запуска nginx должен показывать php info.
 
 ```
 ./docker-compose/docker-compose -f docker-compose.yml up -d
