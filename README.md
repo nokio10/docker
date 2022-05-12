@@ -35,7 +35,7 @@ docker run -d -p 80:80 nginx
 После запуска nginx должен показывать php info.
 
 ```
-docker-compose -f docker-compose.yml up -d
+./docker-compose/docker-compose -f docker-compose.yml up -d
 ```
 
 ![image](https://user-images.githubusercontent.com/98832702/168165717-c7d43a33-861b-4fed-bed1-f8ffb47c920c.png)
