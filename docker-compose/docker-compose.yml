@@ -1,7 +1,7 @@
 version: "2"
 services:
   nginx:
-    image: nginx
+    image: nokio10/mynginx:php
     container_name: nginx
     ports:
         - "80:80"
@@ -15,7 +15,7 @@ services:
 
 
   fpm:
-    image: php
+    image: nokio10/php:php
     container_name: fpm
     networks:
         - nginx
